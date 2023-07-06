@@ -31,6 +31,23 @@ document.addEventListener("DOMContentLoaded", function () {
   var mainImage = document.querySelector(".main-image img");
   var thumbnailImages = document.querySelectorAll(".thumbnail-images img");
 
+  var minusButton = document.querySelector(".minus");
+  var plusButton = document.querySelector(".plus");
+  var quantityInput = document.querySelector(".number-of-items input");
+
+  // Changing the product quantity
+  minusButton.addEventListener("click", function () {
+    var currentValue = parseInt(quantityInput.value);
+    if (currentValue > 1) {
+      quantityInput.value = currentValue - 1;
+    }
+  });
+
+  plusButton.addEventListener("click", function () {
+    var currentValue = parseInt(quantityInput.value);
+    if (currentValue < 100) quantityInput.value = currentValue + 1;
+  });
+
   // Adding event listeners to each thumbnail image
   thumbnailImages.forEach(function (thumbnail) {
     thumbnail.addEventListener("mouseover", function () {

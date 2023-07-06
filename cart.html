@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
-
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -76,87 +75,86 @@
 
     <main>
       <div class="container">
-        <div class="contact-details">
-          <div class="row">
-            <div class="col-md-6">
-              <h2>Our Location</h2>
-              <div id="map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4859.58857644225!2d-1.8856338273086153!3d52.482860247002975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1688643173295!5m2!1sen!2suk"
-                  width="600"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
+        <div class="cart-items">
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="img/products/product-1-1.jpg" alt="Product 1" />
+            </div>
+            <div class="item-details">
+              <h3>Product 1</h3>
+              <p class="price">$29.99</p>
+              <div class="item-quantity">
+                <button class="minus">-</button>
+                <input type="number" value="1" min="1" />
+                <button class="plus">+</button>
               </div>
             </div>
-            <div class="col-md-6">
-              <h2>Contact Information</h2>
-              <p><i class="fas fa-phone"></i> Phone: +1 123 456 7890</p>
-              <p>
-                <i class="fas fa-map-marker-alt"></i> Address: 123 Street, City,
-                Country
-              </p>
+            <div class="item-remove">
+              <button class="btn btn-remove">
+                <span class="material-icons"> delete </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="img/products/product-2-1.jpg" alt="Product 2" />
+            </div>
+            <div class="item-details">
+              <h3>Product 2</h3>
+              <p class="price">$24.99</p>
+              <div class="item-quantity">
+                <button class="minus">-</button>
+                <input type="number" value="2" min="1" />
+                <button class="plus">+</button>
+              </div>
+            </div>
+            <div class="item-remove">
+              <button class="btn btn-remove">
+                <span class="material-icons"> delete </span>
+              </button>
             </div>
           </div>
         </div>
 
-        <div class="container contact-form">
-          <h2>Send us a Message</h2>
-          <p>
-            Please fill out the form below and we'll get back to you as soon as
-            possible.
-          </p>
-
-          <form>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="name">Name:</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="form-control"
-                    required
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label for="email">Email:</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="form-control"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="message">Message:</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    class="form-control"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-          </form>
+        <div class="cart-total">
+          <h3>Total: $54.97</h3>
         </div>
+
+        <div class="payment-methods">
+        <h3>Choose Payment Method:</h3>
+        <div class="payment-method">
+          <input type="radio" name="payment" id="payment-cash" value="cash" />
+          <label for="payment-cash">Cash on Delivery</label>
+        </div>
+        <div class="payment-method">
+          <input
+            type="radio"
+            name="payment"
+            id="payment-credit-card"
+            value="credit-card"
+          />
+          <label for="payment-credit-card">Credit Card</label>
+        </div>
+        <div class="payment-method">
+          <input
+            type="radio"
+            name="payment"
+            id="payment-paypal"
+            value="paypal"
+          />
+          <label for="payment-paypal">PayPal</label>
+        </div>
+      </div>
+
+      <div class="cart-actions">
+        <button class="btn btn-primary">Checkout</button>
+      </div>
+    </div>
       </div>
     </main>
 
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
