@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -59,10 +59,10 @@
                 <a class="nav-link" href="product.html">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="cart.html">Cart</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="auth.html">Login</a>
@@ -73,7 +73,7 @@
       </nav>
     </header>
 
-    <main>
+    <main style="margin-bottom: 10vh">
       <div class="container">
         <div class="cart-items">
           <div class="cart-item">
@@ -84,14 +84,14 @@
               <h3>Product 1</h3>
               <p class="price">$29.99</p>
               <div class="item-quantity">
-                <button class="minus">-</button>
+                <button class="minus btn">-</button>
                 <input type="number" value="1" min="1" />
-                <button class="plus">+</button>
+                <button class="plus btn">+</button>
               </div>
             </div>
             <div class="item-remove">
               <button class="btn btn-remove">
-                <span class="material-icons"> delete </span>
+                <span class="material-icons"> delete_outline </span>
               </button>
             </div>
           </div>
@@ -104,14 +104,34 @@
               <h3>Product 2</h3>
               <p class="price">$24.99</p>
               <div class="item-quantity">
-                <button class="minus">-</button>
+                <button class="minus btn">-</button>
                 <input type="number" value="2" min="1" />
-                <button class="plus">+</button>
+                <button class="plus btn">+</button>
               </div>
             </div>
             <div class="item-remove">
               <button class="btn btn-remove">
-                <span class="material-icons"> delete </span>
+                <span class="material-icons"> delete_outline </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="cart-item">
+            <div class="item-image">
+              <img src="img/products/product-3-1.jpg" alt="Product 3" />
+            </div>
+            <div class="item-details">
+              <h3>Product 3</h3>
+              <p class="price">$24.99</p>
+              <div class="item-quantity">
+                <button class="minus btn">-</button>
+                <input type="number" value="1" min="1" />
+                <button class="plus btn">+</button>
+              </div>
+            </div>
+            <div class="item-remove">
+              <button class="btn btn-remove">
+                <span class="material-icons"> delete_outline </span>
               </button>
             </div>
           </div>
@@ -122,39 +142,67 @@
         </div>
 
         <div class="payment-methods">
-        <h3>Choose Payment Method:</h3>
-        <div class="payment-method">
-          <input type="radio" name="payment" id="payment-cash" value="cash" />
-          <label for="payment-cash">Cash on Delivery</label>
+          <h3>Choose Payment Method:</h3>
+          <div class="payment-method">
+            <input type="radio" name="payment" id="payment-cash" value="cash" />
+            <img src="img/logo/cash-icon.png" alt="Cash" />
+            <label for="payment-cash">Cash on Delivery</label>
+          </div>
+          <div class="payment-method">
+            <input
+              type="radio"
+              name="payment"
+              id="payment-credit-card"
+              value="credit-card"
+            />
+            <img src="img/logo/creditcard-icon.png" alt="Credit Card" />
+            <label for="payment-credit-card">Credit Card</label>
+          </div>
+          <div class="payment-method">
+            <input
+              type="radio"
+              name="payment"
+              id="payment-paypal"
+              value="paypal"
+            />
+            <img src="img/logo/paypal-icon.png" alt="PayPal" />
+            <label for="payment-paypal">PayPal</label>
+          </div>
+          <div class="payment-method">
+            <input
+              type="radio"
+              name="payment"
+              id="payment-applepay"
+              value="Apple Pay"
+            />
+            <img src="img/logo/applypay-icon.png" alt="Apple Pay" />
+            <label for="payment-paypal">Apple Pay</label>
+          </div>
         </div>
-        <div class="payment-method">
-          <input
-            type="radio"
-            name="payment"
-            id="payment-credit-card"
-            value="credit-card"
-          />
-          <label for="payment-credit-card">Credit Card</label>
-        </div>
-        <div class="payment-method">
-          <input
-            type="radio"
-            name="payment"
-            id="payment-paypal"
-            value="paypal"
-          />
-          <label for="payment-paypal">PayPal</label>
-        </div>
-      </div>
 
-      <div class="cart-actions">
-        <button class="btn btn-primary">Checkout</button>
-      </div>
-    </div>
+        <div class="cart-actions">
+          <button class="btn btn-primary">Checkout</button>
+        </div>
       </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <span class="text-muted"
+              >&copy; 2023 Shopex. All rights reserved.</span
+            >
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <a href="about.html" class="btn btn-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
