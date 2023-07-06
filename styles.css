@@ -2,6 +2,7 @@
 :root {
     --primary-color: #FF6D70;
     --secondary-color: #232f3e;
+    --primary-color-hover: #e95f62;
 }
 
 /* Global Styles */
@@ -23,20 +24,19 @@ body {
 }
 
 .navbar-brand {
-    color: var(--primary-color);
     font-size: 24px;
     font-weight: bold;
 }
 
 .navbar-nav .nav-link {
-    color: var(--primary-color);
+    color: #fff;
     font-size: 1.2rem;
     font-weight: 800;
     transition: color 0.3s ease;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #fff;
+.navbar-nav .nav-link:hover  {
+    color: var(--primary-color);
 }
 
 .navbar-toggler-icon {
@@ -70,8 +70,10 @@ body {
 }
 
 .banner img {
+    position: relative;
     max-width: 100%;
-    max-height: 50vh;
+    min-height: 400px;
+    height: 40vh;
     object-fit: cover;
 }
 
@@ -147,97 +149,49 @@ body {
 }
 
 /* Login Page Styles */
-#login-page {
-    margin-top: 40px;
+.container-sm {
+    margin-top: 20vh !important;
+    max-width: 20% !important;
 }
 
 .login-container {
-    margin: 0 auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .login-box {
-    max-width: 500px !important;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.login-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
+
+#register-form {
+    display: none;
+}
+
+#register-link,
+#login-link {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 .form-group {
     margin-bottom: 20px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
 .form-control {
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border: none !important;
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
 }
 
-.form-group.text-center {
-    margin-bottom: 0;
-}
-
-.form-group.text-center a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.form-group.text-center a:hover {
-    text-decoration: underline;
-}
-
-/* Contact Page Styles */
-.contact-form {
-    margin-top: 40px;
-}
-
-.contact-form form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.contact-form label {
-    font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.contact-form button {
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
-}
-
-.contact-form button:hover {
-    background-color: rgba(var(--primary-color-rgb), 0.9);
+.btn-primary:hover {
+    background-color: var(--primary-color-hover) !important;
 }
 
 /* Product Details Styles */
@@ -342,12 +296,31 @@ body {
         flex-direction: column;
     }
 
+    .product-images {
+        order: 2;
+    }
+
     .product-info {
+        order: 1;
         padding: 0;
+        margin-top: 20px;
     }
 
     .thumbnail-images {
         justify-content: flex-start;
-        margin-top: 20px;
+        margin-top: 10px;
+    }
+
+    .product-info h2 {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .product-info p {
+        margin-top: 5px;
+    }
+
+    .product .price {
+        font-size: 16px;
     }
 }

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Contact Page</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -71,34 +73,89 @@
       </nav>
     </header>
 
-
-    <div class="container">
-      <h1>Contact Us</h1>
-
-      <div class="contact-form">
-        <form>
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+    <main>
+      <div class="container">
+        <div class="contact-details">
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Our Location</h2>
+              <div id="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d4859.58857644225!2d-1.8856338273086153!3d52.482860247002975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1688643173295!5m2!1sen!2suk"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h2>Contact Information</h2>
+              <p><i class="fas fa-phone"></i> Phone: +1 123 456 7890</p>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Address: 123 Street, City,
+                Country
+              </p>
+            </div>
           </div>
+        </div>
 
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
+        <div class="container contact-form">
+          <h2>Send us a Message</h2>
+          <p>
+            Please fill out the form below and we'll get back to you as soon as
+            possible.
+          </p>
 
-          <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    required
+                  />
+                </div>
 
-          <div class="form-group">
-            <button type="submit" class="btn-primary">Submit</button>
-          </div>
-        </form>
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="message">Message:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
+    </main>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
