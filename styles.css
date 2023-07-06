@@ -188,38 +188,6 @@ body {
     border: 1px solid #ccc;
 }
 
-.btn-primary {
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.btn-primary:hover {
-    background-color: rgba(var(--primary-color-rgb), 0.9);
-}
-
-.btn-secondary {
-    background-color: #ccc;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.btn-secondary:hover {
-    background-color: darken(#ccc, 10%);
-}
-
 .form-group.text-center {
     margin-bottom: 0;
 }
