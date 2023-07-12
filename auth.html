@@ -81,127 +81,150 @@
 
     <!-- Login/Register Page -->
     <main>
-      <div class="container-sm login-container login-box">
-        <div id="login-form">
-          <form>
-            <div class="form-group">
-              <label for="login-email">Email</label>
-              <input
-                type="email"
-                id="login-email"
-                class="form-control"
-                placeholder="Enter your email"
-              />
-            </div>
-            <div class="form-group">
-              <label for="login-password">Password</label>
-              <input
-                type="password"
-                id="login-password"
-                class="form-control"
-                placeholder="Enter your password"
-              />
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary">Login</button>
-            </div>
-            <div class="form-group text-center">
-              Don't have an account? <a href="#" id="register-link">Register</a>
-            </div>
-            <div class="social-login">
-              <div class="or-divider">OR</div>
-              <div class="login-buttons">
-                <button class="btn btn-secondary">
-                  <img
-                    src="img/logo/facebook-icon.png"
-                    alt="Login with Facebook"
-                  />
-                  Login with Facebook
-                </button>
-                <button class="btn btn-secondary">
-                  <img src="img/logo/google-icon.png" alt="Login with Google" />
-                  Login with Google
-                </button>
-                <button class="btn btn-secondary">
-                  <img src="img/logo/apple-icon.png" alt="Login with Apple" />
-                  Login with Apple
-                </button>
+      <div class="container-sm login-container">
+        <div class="row justify-content-around">
+          <div class="col-lg-6 d-none d-lg-block">
+            <img src="img/shopping.svg" alt="Shopping" class="img-fluid" />
+            <h2 class="marketing-title">
+              Discover the Best Deals at
+              <span class="shopex-brand">Shopex</span>
+            </h2>
+          </div>
+          <div class="col-lg-4">
+            <div class="login-box">
+              <div id="login-form">
+                <form>
+                  <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input
+                      type="email"
+                      id="login-email"
+                      class="form-control"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input
+                      type="password"
+                      id="login-password"
+                      class="form-control"
+                      placeholder="Enter your password"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                  </div>
+                  <div class="form-group text-center">
+                    Don't have an account?
+                    <a href="#" id="register-link">Register</a>
+                  </div>
+                  <div class="social-login">
+                    <div class="or-divider">OR</div>
+                    <div class="login-buttons">
+                      <button class="btn btn-secondary">
+                        <img
+                          src="img/logo/facebook-icon.png"
+                          alt="Login with Facebook"
+                        />
+                        Login with Facebook
+                      </button>
+                      <button class="btn btn-secondary">
+                        <img
+                          src="img/logo/google-icon.png"
+                          alt="Login with Google"
+                        />
+                        Login with Google
+                      </button>
+                      <button class="btn btn-secondary">
+                        <img
+                          src="img/logo/apple-icon.png"
+                          alt="Login with Apple"
+                        />
+                        Login with Apple
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
-            </div>
-          </form>
-        </div>
 
-        <div id="register-form" style="display: none">
-          <form>
-            <div class="form-group">
-              <label for="register-name">Full Name</label>
-              <input
-                type="text"
-                id="register-name"
-                class="form-control"
-                placeholder="Enter your full name"
-              />
-            </div>
-            <div class="form-group">
-              <label for="register-email">Email</label>
-              <input
-                type="email"
-                id="register-email"
-                class="form-control"
-                placeholder="Enter your email"
-              />
-            </div>
-            <div class="form-group">
-              <label for="register-password">Password</label>
-              <input
-                type="password"
-                id="register-password"
-                class="form-control"
-                placeholder="Enter your password"
-              />
-            </div>
-            <div class="form-group">
-              <label for="register-password">Confirm Password</label>
-              <input
-                type="password"
-                id="confirm-register-password"
-                class="form-control"
-                placeholder="Re-enter your password"
-              />
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary">Register</button>
-            </div>
-            <div class="form-group text-center">
-              Already have an account? <a href="#" id="login-link">Login</a>
-            </div>
-            <div class="social-login">
-              <div class="or-divider">OR</div>
-              <div class="login-buttons">
-                <button class="btn btn-secondary">
-                  <img
-                    src="img/logo/facebook-icon.png"
-                    alt="Register with Facebook"
-                  />
-                  Register with Facebook
-                </button>
-                <button class="btn btn-secondary">
-                  <img
-                    src="img/logo/google-icon.png"
-                    alt="Register with Google"
-                  />
-                  Register with Google
-                </button>
-                <button class="btn btn-secondary">
-                  <img
-                    src="img/logo/apple-icon.png"
-                    alt="Register with Apple"
-                  />
-                  Register with Apple
-                </button>
+              <div id="register-form" style="display: none">
+                <form>
+                  <div class="form-group">
+                    <label for="register-name">Full Name</label>
+                    <input
+                      type="text"
+                      id="register-name"
+                      class="form-control"
+                      placeholder="Enter your full name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input
+                      type="email"
+                      id="register-email"
+                      class="form-control"
+                      placeholder="Enter your email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input
+                      type="password"
+                      id="register-password"
+                      class="form-control"
+                      placeholder="Enter your password"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="register-password">Confirm Password</label>
+                    <input
+                      type="password"
+                      id="confirm-register-password"
+                      class="form-control"
+                      placeholder="Re-enter your password"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary">
+                      Register
+                    </button>
+                  </div>
+                  <div class="form-group text-center">
+                    Already have an account?
+                    <a href="#" id="login-link">Login</a>
+                  </div>
+                  <div class="social-login">
+                    <div class="or-divider">OR</div>
+                    <div class="login-buttons">
+                      <button class="btn btn-secondary">
+                        <img
+                          src="img/logo/facebook-icon.png"
+                          alt="Register with Facebook"
+                        />
+                        Register with Facebook
+                      </button>
+                      <button class="btn btn-secondary">
+                        <img
+                          src="img/logo/google-icon.png"
+                          alt="Register with Google"
+                        />
+                        Register with Google
+                      </button>
+                      <button class="btn btn-secondary">
+                        <img
+                          src="img/logo/apple-icon.png"
+                          alt="Register with Apple"
+                        />
+                        Register with Apple
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </main>
