@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("Added to cart");
     });
   });
+
+  //banner auto slide
+  const carousel = new bootstrap.Carousel(
+    document.getElementById("carouselExampleIndicators"),
+    {
+      interval: 3000,
+      pause: "hover",
+    }
+  );
 });
 
 // auth.html
@@ -67,5 +76,22 @@ document.addEventListener("DOMContentLoaded", function () {
     // Updating the main image source with the correct path
     var newImagePath = newImageSrc;
     mainImage.setAttribute("src", newImagePath);
+  }
+});
+
+// 404.html
+document.addEventListener("DOMContentLoaded", function () {
+  // Handle unknown pages
+  var path = window.location.pathname;
+  if (
+    path !== "/" &&
+    path !== "/index.html" &&
+    path !== "/auth.html" &&
+    path !== "/product.html" &&
+    path !== "/about.html" &&
+    path !== "/cart.html" &&
+    path !== "/contact.html"
+  ) {
+    window.location.href = "404.html";
   }
 });
