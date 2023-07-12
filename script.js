@@ -1,4 +1,4 @@
-// index.html
+// home.html
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".product button");
 
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var path = window.location.pathname;
   if (
     path !== "/" &&
-    path !== "/index.html" &&
+    path !== "/home.html" &&
     path !== "/auth.html" &&
     path !== "/product.html" &&
     path !== "/about.html" &&

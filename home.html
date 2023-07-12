@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopex</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container justify-content-between align-items-center">
+          <a class="navbar-brand text-white pe-4" href="home.html">Shopex</a>
+
+          <div class="col-lg-4 col-6 text-right">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search for products"
+              />
+              <button class="btn align-content-center bg-white" type="button">
+                <span class="material-icons fw-bold"> search </span>
+              </button>
+            </div>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="material-icons fw-bold">menu</span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="auth.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Banner -->
+      <div class="banner bg-body-secondary">
+        <div class="banner-container">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="img/banner/banner-1.jpg"
+                  class="d-block w-100 banner-image"
+                  alt="Banner 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/banner/banner-2.jpg"
+                  class="d-block w-100"
+                  alt="Banner 2"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/banner/banner-3.jpg"
+                  class="d-block w-100"
+                  alt="Banner 3"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/banner/banner-4.jpg"
+                  class="d-block w-100"
+                  alt="Banner 4"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="img/banner/banner-5.jpg"
+                  class="d-block w-100"
+                  alt="Banner 5"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products -->
+      <div class="container products-container">
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="product">
+              <img src="img/products/product-1-1.jpg" alt="Product 1" />
+              <h3>Canon EOS R - Full-Frame Mirrorless Camera</h3>
+              <p class="price">$2,035.99</p>
+              <p>
+                The Canon EOS R is a high-performance full-frame mirrorless
+                camera designed to elevate your photography and videography to
+                new heights.
+              </p>
+              <button type="button" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="product">
+              <img src="img/products/product-2-1.jpg" alt="Product 2" />
+              <h3>The Apple Watch Series 6 GPS</h3>
+              <p class="price">$39.99</p>
+              <p>
+                The Apple Watch Series 6 is a powerful and feature-rich
+                smartwatch that combines sleek design with advanced health, and
+                ECG functionality.
+              </p>
+              <button type="button" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="product">
+              <img src="img/products/product-3-1.jpg" alt="Product 3" />
+              <h3>iPhone 14 Pro Max</h3>
+              <p class="price">$1,299.99</p>
+              <p>
+                The iPhone 14 Pro Max is the latest flagship smartphone from
+                Apple. It features a stunning design and a powerful set of
+                features.
+              </p>
+              <button type="button" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="product">
+              <img src="img/products/product-4-1.jpg" alt="Product 4" />
+              <h3>Xbox Controller</h3>
+              <p class="price">$59.99</p>
+              <p>
+                The Xbox Controller is a high-quality gaming controller designed
+                for Xbox consoles. It offers precise control and responsive
+                buttons, allowing you to enhance your gaming experience.
+              </p>
+              <button type="button" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="product">
+              <img src="img/products/product-5-1.jpg" alt="Product 5" />
+              <h3>PlayStation 5 (PS5)</h3>
+              <p class="price">$499.99</p>
+              <p>
+                The PlayStation 5 (PS5) is the latest gaming console from Sony.
+                The PlayStation 5 delivers breathtaking graphics, lightning-fast
+                loading times, and immersive game play.
+              </p>
+              <button type="button" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="col-md-6 col-lg-4 mt-5">
+            <div class="product">
+              <img src="img/products/product-6-1.jpg" alt="Product 6" />
+              <h3>iPad Pro 11.5-inch (2021 Model)</h3>
+              <p class="price">$899.99</p>
+              <p>
+                The iPad Pro 11.5-inch is the latest tablet from Apple. It
+                combines power, versatility, and portability in a sleek package.
+                With its stunning Liquid Retina display, it offers an immersive
+                visual experience.
+              </p>
+              <button type="button" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="about.html">Terms of Service</a></li>
+              <li><a href="about.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5>Follow Us</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5>Contact Info</h5>
+            <ul class="list-unstyled">
+              <li>
+                <i class="material-icons">location_on</i> 123 Street, City,
+                Country
+              </li>
+              <li><i class="material-icons">email</i> info@example.com</li>
+              <li><i class="material-icons">phone</i> +1234567890</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-lg-6">
+            <span class="text-muted"
+              >&copy; 2023 Shopex. All rights reserved.</span
+            >
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <a href="about.html" class="btn btn-link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
