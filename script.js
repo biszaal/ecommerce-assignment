@@ -79,6 +79,26 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// Products.html
+document.addEventListener("DOMContentLoaded", function () {
+  // Get references to filter elements
+  const sortSelect = document.getElementById("sortSelect");
+  const priceRange = document.getElementById("priceRange");
+  const categorySelect = document.getElementById("categorySelect");
+
+  // Add event listener to apply filters button
+  const applyFiltersButton = document.querySelector(
+    'form button[type="submit"]'
+  );
+  applyFiltersButton.addEventListener("click", applyFilters);
+
+  // Apply filters function
+  function applyFilters(event) {
+    event.preventDefault();
+    // Filter logic goes here
+  }
+});
+
 // 404.html
 document.addEventListener("DOMContentLoaded", function () {
   // Handle unknown pages
@@ -88,6 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
     path !== "/home.html" &&
     path !== "/auth.html" &&
     path !== "/product.html" &&
+    path !== "/products.html" &&
     path !== "/about.html" &&
     path !== "/cart.html" &&
     path !== "/contact.html"
