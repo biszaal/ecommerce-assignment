@@ -107,7 +107,8 @@ document.addEventListener("DOMContentLoaded", function () {
     path !== "/" &&
     path !== "/home.html" &&
     path !== "/auth.html" &&
-    path !== "/product.html" &&
+    path !== "/product-1.html" &&
+    path !== "/product-2.html" &&
     path !== "/products.html" &&
     path !== "/about.html" &&
     path !== "/cart.html" &&
